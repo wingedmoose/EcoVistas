@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - EcoVista</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+      
+        body {
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 22px;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #045c2f;
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header img {
+            width: 200px;
+            height: auto;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #045c2f;
+            padding-bottom: 10px;
+	    color: #045c2f;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+
+        footer {
+            background-color: #f9f9f9;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .fun-title {
+            font-size: 3rem;
+            color: #045c2f;
+            text-align: center;
+            margin-top: 50px;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+
+        .fun-title span {
+            animation: rainbow-text 5s infinite;
+        }
+
+        @keyframes rainbow-text {
+            0% { color: #ff0000; }
+            20% { color: #ff8000; }
+            40% { color: #ffff00; }
+            60% { color: #00ff00; }
+            80% { color: #0000ff; }
+            100% { color: #ff00ff; }
+        }
+
+        .fun-message {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 1.2rem;
+            color: #333;        
+	}
+
+        .fun-message img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        form {
+            text-align: center;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 10px;
+            text-align: left;
+            font-family: 'Lato', sans-serif;
+        }
+
+        form input[type="text"],
+        form input[type="email"],
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-family: 'Lato', sans-serif;
+        }
+
+        form textarea {
+            height: 150px;
+        }
+
+        form input[type="submit"] {
+            background-color: #045c2f;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-family: 'Lato', sans-serif;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #004d26;
+        }
+
+	.content-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .content-wrapper p {
+            font-size: 1.1rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #045c2f;
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #004d26;
+        }
+
+    	</style>
+	</head>
+	<body>
+        <header>
+        <img src="ecovista-logo.png" alt="EcoVista Logo">
+        <h1>EcoVista</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="tips.html">Sustainability Tips</a></li>
+                <li><a href="challenges.html">Sustainability Challenges</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2 class="fun-title">Let's Get <span>Colorful</span>!</h2>
+            <p class="fun-message">Fill out the form below and let's chat about how we can make the world a brighter place together!</p>
+            <form action="welcome.php" method="POST">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <input type="submit" value="Send Message">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 EcoVista. All rights reserved. | <a href="privacy.html">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
